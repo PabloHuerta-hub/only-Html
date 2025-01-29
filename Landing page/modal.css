@@ -1,0 +1,98 @@
+.cardExpanded {
+    cursor: default;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 40vw;
+    height: 40vh;
+    transform: translate(-50%, -50%)  ;
+    will-change: transform;
+    border-radius: 10px;
+    padding: 1rem;
+    animation: openModal 0.5s ease-out forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden; 
+
+
+  }
+  
+ .cardExpanded .cardContent {
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cardExpanded .cardAnimationContainer {
+    height: 100%;
+    max-height: 35vh;
+    width: 100%;
+    background-color: #141219;
+
+  }
+  
+  .cardExpanded .cardTitle {
+    text-align: center;
+    -webkit-font-smoothing: subpixel-antialiased;
+    backface-visibility: hidden;
+    transform:  perspective(1px) translateZ(0);
+  }
+  
+  .closeBtn {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size: xx-large;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    background: none;
+    border: none;
+  }
+  
+  .visibleWhenOpen {
+    display: none;
+  }
+  
+  @keyframes openModal {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+
+.buttonCopyCss{
+    border-radius: 20px;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    top: 5px;
+    right: 0;
+    width: 100px;
+    color: white;
+    background-color: dodgerblue;
+}
+
+.buttonCopyHtml{
+    border-radius: 20px;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    top: 5px;
+    right: 105px;
+    width: 100px;
+    color: white;
+    background-color: orangered;
+}
+

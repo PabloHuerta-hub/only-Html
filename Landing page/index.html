@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./global.css"  crossorigin="anonymous"/>
+    <title>Document</title>
+    <script type="text/javascript" src="./index.js" defer></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./modal.css"  crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./animations.css"   crossorigin="anonymous"/>
+  </head>
+  <body>
+    <div class="contentPage">
+      <div class="titleLandingPageContainer">
+        <h1 class="titleLandingPage">Search for any css loading</h1>
+        <h2 class="subtitleLandingPage">animation</h2>
+        <p class="paragraphLandingPage">
+          Page dedicated to save all the loading components i recreated or saw
+        </p>
+      </div>
+
+      <div class="mainContent">
+        <div class="searchContainer">
+          <input type="text" placeholder="Search.." name="search" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+
+        <div class="cardContainer">
+          <div class="card">
+            <div class="cardContent">
+              <button class="closeBtn visibleWhenOpen" id="closeBtn">
+                &times;
+              </button>
+              <h3 class="cardTitle">Cooking pan animation</h3>
+              <div class="cardAnimationContainer">
+                <svg
+                  class="pl"
+                  viewBox="0 0 128 128"
+                  width="128px"
+                  height="128px"
+                  role="img"
+                  aria-label="A pan being used to flip a blob resembling bacon as it splashes drops of grease in and out"
+                >
+                  <clipPath id="pan-clip">
+                    <rect rx="12" ry="14" x="4" y="52" width="68" height="28" />
+                  </clipPath>
+                  <defs>
+                    <linearGradient id="pl-grad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#000" />
+                      <stop offset="100%" stop-color="#fff" />
+                    </linearGradient>
+                    <mask id="pl-mask">
+                      <rect
+                        x="0"
+                        y="0"
+                        width="88"
+                        height="80"
+                        fill="url(#pl-grad)"
+                      />
+                    </mask>
+                  </defs>
+                  <g fill="currentColor">
+                    <g
+                      fill="none"
+                      stroke-dasharray="20 221"
+                      stroke-dashoffset="20"
+                      stroke-linecap="round"
+                      stroke-width="4"
+                    >
+                      <g stroke="hsl(38,90%,50%)">
+                        <circle
+                          class="pl__ring"
+                          cx="44"
+                          cy="40"
+                          r="35"
+                          transform="rotate(90,44,40)"
+                        />
+                      </g>
+                    </g>
+                    <g fill="hsla(223,10%,50%,0.2)">
+                      <g class="pl__drop pl__drop--1">
+                        <circle class="pl__drop-inner" cx="13" cy="60" r="2" />
+                      </g>
+                      <g class="pl__drop pl__drop--2">
+                        <circle class="pl__drop-inner" cx="13" cy="60" r="2" />
+                      </g>
+                      <g class="pl__drop pl__drop--3">
+                        <circle class="pl__drop-inner" cx="67" cy="72" r="2" />
+                      </g>
+                      <g class="pl__drop pl__drop--4">
+                        <circle class="pl__drop-inner" cx="67" cy="72" r="2" />
+                      </g>
+                      <g class="pl__drop pl__drop--5">
+                        <circle class="pl__drop-inner" cx="67" cy="72" r="2" />
+                      </g>
+                    </g>
+
+                    <g class="pl__pan">
+                      <rect
+                        rx="2"
+                        ry="2"
+                        x="4"
+                        y="66"
+                        width="68"
+                        height="14"
+                        clip-path="url(#pan-clip)"
+                        id="pan"
+                      />
+                      <rect rx="2" ry="2" x="76" y="66" width="48" height="7" />
+                    </g>
+                    <rect
+                      class="pl__shadow"
+                      fill="hsla(223,10%,50%,0.2)"
+                      rx="3.5"
+                      ry="3.5"
+                      x="10"
+                      y="121"
+                      width="60"
+                      height="7"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardContent">
+              <button class="closeBtn visibleWhenOpen" id="closeBtn">
+                &times;
+              </button>
+              <h3 class="cardTitle">Spinner animation</h3>
+              <div class="cardAnimationContainer">
+                <div class="containerCircleAnimation">
+                  <div class="circle"></div>
+                </div>
+                <div class="containerCircleAnimation">
+                  <div class="circle"></div>
+                </div>
+                <div class="containerCircleAnimation">
+                  <div class="circle"></div>
+                </div>
+                <div class="containerCircleAnimation">
+                  <div class="circle"></div>
+                </div>
+                <div class="containerCircleAnimation">
+                  <div class="circle"></div>
+                </div>
+                <div class="containerCircleAnimation">
+                  <div class="circle"></div>
+                </div>
+                <div class="containerCircleAnimation">
+                  <div class="circle"></div>
+                </div>
+                <div class="containerCircleAnimation">
+                  <div class="circle"></div>
+                </div>
+                <div class="containerCircleAnimation">
+                  <div class="circle"></div>
+                </div>
+                <div class="containerCircleAnimation">
+                  <div class="circle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardContent">
+              <button class="closeBtn visibleWhenOpen" id="closeBtn">
+                &times;
+              </button>
+              <h3 class="cardTitle">Particle Acelerator</h3>
+              <div class="cardAnimationContainer">
+                <div class="containerParticleAnimation">
+                  <div class="particle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardContent">
+              <button class="closeBtn visibleWhenOpen" id="closeBtn">
+                &times;
+              </button>
+              <h3 class="cardTitle">The bars</h3>
+              <div class="cardAnimationContainer">
+       
+                <div class="loader"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
