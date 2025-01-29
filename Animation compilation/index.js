@@ -22,12 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
       );
 
       const newButton = document.createElement("button");
-      newButton.textContent = "Copiar CSS";
+      newButton.textContent = "Copy CSS";
       newButton.classList.add("buttonCopyCss");
       cardContentClone.appendChild(newButton);
 
       const newButtonHtml = document.createElement("button");
-      newButtonHtml.textContent = "Copiar HTML";
+      newButtonHtml.textContent = "Copy HTML";
       newButtonHtml.classList.add("buttonCopyHtml");
       cardContentClone.appendChild(newButtonHtml);
 
