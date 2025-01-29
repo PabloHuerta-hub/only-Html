@@ -66,25 +66,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
         Array.from(document.styleSheets).forEach((sheet) => {
           try {
-            const rules = sheet.cssRules || sheet.rules;
+            const rules = sheet.cssRules;
             if (rules) {
               Array.from(rules).forEach((rule) => {
              if (rule instanceof CSSStyleRule) {
                   elementsToCopy.forEach((element) => {
                     if (element.matches(rule.selectorText)) {
 
-                      if (
-                        rule.style.animationName &&
-                        rule.style.animationName !== ""
-                      ) {
+                      if ( rule.style.animationName &&
+                        rule.style.animationName !== "" ) {
                       
 
-                        Array.from(sheet.cssRules || sheet.rules).forEach(
+                        Array.from(sheet.cssRules ).forEach(
                           (keyframeRule) => {
-                            if (
-                              keyframeRule instanceof CSSKeyframesRule &&
-                              keyframeRule.name === rule.style.animationName
-                            ) {
+                            if (keyframeRule instanceof CSSKeyframesRule && keyframeRule.name === rule.style.animationName) {
                               if (!copiedKeyframes.has(keyframeRule.name)) {
                        
                                 cssText += keyframeRule.cssText + "\n\n";

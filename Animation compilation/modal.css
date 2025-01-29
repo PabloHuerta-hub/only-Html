@@ -70,7 +70,9 @@
     }
   }
   
-
+.cancelPointerEvents       {
+  pointer-events: none;
+}
 
 .buttonCopyCss{
     border-radius: 20px;
