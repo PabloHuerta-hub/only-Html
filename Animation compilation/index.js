@@ -72,15 +72,12 @@ document.addEventListener("DOMContentLoaded", () => {
              if (rule instanceof CSSStyleRule) {
                   elementsToCopy.forEach((element) => {
                     if (element.matches(rule.selectorText)) {
-                      console.log(rule.style.animationName);
 
                       if (
                         rule.style.animationName &&
                         rule.style.animationName !== ""
                       ) {
-                        console.log(
-                          `AnimationName encontrado: ${rule.style.animationName}`
-                        );
+                      
 
                         Array.from(sheet.cssRules || sheet.rules).forEach(
                           (keyframeRule) => {
@@ -89,9 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
                               keyframeRule.name === rule.style.animationName
                             ) {
                               if (!copiedKeyframes.has(keyframeRule.name)) {
-                                console.log(
-                                  `@keyframes encontrado para ${rule.style.animationName}`
-                                );
+                       
                                 cssText += keyframeRule.cssText + "\n\n";
                                 copiedKeyframes.add(keyframeRule.name);
                               }
@@ -102,7 +97,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
                       const ruleCssText = rule.cssText.trim();
                       if (!copiedRules.has(ruleCssText)) {
-                        console.log(`Regla CSS encontrada: ${ruleCssText}`);
                         cssText += ruleCssText + "\n\n";
                         copiedRules.add(ruleCssText);
                       }
